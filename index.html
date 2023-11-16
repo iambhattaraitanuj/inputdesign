@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins', sans-serif;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        height: 30rem;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(207, 207, 207);
+    }
+    .container{
+        /* border: 2px solid red; */
+        
+        width: 16.5rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 4px;
+    }
+
+    input[type=text]{
+        padding: 1rem;
+        width: 14rem;
+        border-radius: 0;
+        border-bottom: 2px solid rgb(92, 92, 92);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        transition: 250ms;
+    }
+
+    input[type=text]:focus ~ label{
+        font-size: 13px;
+        top: -3.7rem;
+        left: 10px;
+        background-color: white;
+        color: rgb(33, 204, 190);
+    }
+    
+    input[type=text]:focus{
+        border: 2px solid rgb(33, 204, 190);
+        border-radius: 5px;
+    
+    }
+    label{
+        font-size: 15px;
+        position: relative;
+        top: -1.8rem;
+        left: 8px;
+        transition: 250ms;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="text">
+        <label for="">
+            Username
+        </label>
+    </div>
+</body>
+</html>
